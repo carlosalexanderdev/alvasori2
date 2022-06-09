@@ -29,7 +29,7 @@
       app
       clipped
       dark
-      :temporary="temporaryDrawer"
+      temporary
       color="primary"
       floating
     />
@@ -44,8 +44,7 @@
       dark
       absolute
       color="primary"
-      class="rounded-te-xl"
-      :class="{ 'rounded-ts-xl': !showDrawer }"
+      class="rounded-t-xl"
     >
       <v-col
         class="text-center"
@@ -67,7 +66,7 @@ export default {
   mounted () {
     setTimeout(() => {
       this.temporaryDrawer = false
-    }, 200)
+    }, 500)
   }
 }
 </script>
