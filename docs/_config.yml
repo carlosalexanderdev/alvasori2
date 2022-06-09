@@ -1,2 +1,2 @@
-Include:
-  - _nuxt
+include: [_nuxt]
+keep_files: [_nuxt]
