@@ -7,8 +7,8 @@
       elevation="0"
       clipped-left
       color="primary"
-      class="rounded-be-xl"
-      :class="{ 'rounded-bs-xl': !showDrawer }"
+      class="rounded-be-lg"
+      :class="{ 'rounded-bs-lg': !showDrawer }"
     >
       <template v-slot:prepend>
         <v-app-bar-nav-icon
@@ -32,7 +32,19 @@
       temporary
       color="primary"
       floating
-    />
+    >
+      <v-list-item
+        prepend-avatar="/logo/icon-no-background-white.png"
+        title="AlvaSori"
+        value="/"
+      />
+      <v-divider />
+      <v-list bg-color="primary" theme="dark">
+        <v-list-item prepend-icon="mdi-cart" title="E-Commerce Solutions" value="ecommerce" />
+        <v-list-item prepend-icon="mdi-cash-multiple" title="Financial Coaching" value="coaching" />
+        <v-list-item prepend-icon="mdi-account-group" title="About Us" value="about-us" />
+      </v-list>
+    </v-navigation-drawer>
 
     <v-main>
       <v-container>
@@ -44,7 +56,7 @@
       dark
       absolute
       color="primary"
-      class="rounded-t-xl"
+      class="rounded-t-lg"
     >
       <v-col
         class="text-center"
